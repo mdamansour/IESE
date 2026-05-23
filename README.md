@@ -11,6 +11,14 @@ Welcome! This repository is a curated collection of resources and preparation ma
 
 I created this because I have been in your shoes. I know the pace can be intense and the workload can feel heavy at times. My goal is to make your journey a bit smoother by sharing what helped me and my classmates.
 
+## Program overview
+
+The Master IESE is a work-study (alternance) program done in partnership with ALTEN Maroc. It combines academic training with real industry experience, so you learn the foundations at school while applying them in professional projects.
+
+The academic home of the program is the [Sidi Mohamed Ben Abdellah University (USMBA)](https://www.usmba.ac.ma/~usmba2/), within the [Faculty of Sciences and Technologies Fez](https://fst-usmba.ac.ma/) and specifically the [Electrical Engineering Department](https://fst-usmba.ac.ma/departement-genie-electrique/).
+
+If you want the official module list and program description, you can find it here: [program-description.pdf](Other/program-description.pdf).
+
 ## Who this is for
 
 - Current or incoming Master IESE students (alternance with ALTEN)
