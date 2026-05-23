@@ -1,0 +1,53 @@
+N = 512; 
+t = (0:N-1) / N;  
+y = sin(2*pi*10*t) + sin(2*pi*15*t) + sin(2*pi*30*t);  
+
+
+tic; 
+y_dft = dft_signal(y); 
+toc; 
+
+tic;  
+y_fft = fft(y); 
+toc;  
+
+figure;
+subplot(2,1,1);
+stem(abs(y_dft)); 
+title('Manual DFT (N = 512)');
+xlabel('Frequency (k)');
+ylabel('Magnitude');
+
+subplot(2,1,2);
+stem(abs(y_fft)); 
+title('FFT (N = 512)');
+xlabel('Frequency (k)');
+ylabel('Magnitude');
+
+N2 = 2048; 
+t2 = (0:N2-1) / N2; 
+y2 = sin(2*pi*10*t2) + sin(2*pi*15*t2) + sin(2*pi*30*t2); 
+
+% Apply DFT using the manual DFT function for N = 2048
+tic;  % Start timer for manual DFT (N = 2048)
+y2_dft = dft_signal(y2);  % Manual DFT computation
+toc;  % Stop timer and display time
+
+% Apply DFT using MATLAB's FFT function for N = 2048
+tic;  % Start timer for FFT (N = 2048)
+y2_fft = fft(y2);  % FFT computation
+toc;  % Stop timer and display time
+
+% Plot the comparison for the second test (N = 2048)
+figure;
+subplot(2,1,1);
+stem(abs(y2_dft));  % Plot the magnitude of manual DFT (N = 2048)
+title('Manual DFT (N = 2048)');
+xlabel('Frequency (k)');
+ylabel('Magnitude');
+
+subplot(2,1,2);
+stem(abs(y2_fft));  % Plot the magnitude of FFT (N = 2048)
+title('FFT (N = 2048)');
+xlabel('Frequency (k)');
+ylabel('Magnitude');

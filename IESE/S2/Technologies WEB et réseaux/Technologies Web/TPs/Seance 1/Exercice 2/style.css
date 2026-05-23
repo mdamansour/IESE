@@ -1,0 +1,27 @@
+tr td:first-child{ 
+	font-weight: bold; 
+	color : blue;
+	font-size : 14px;
+	/*font: arial;            to be verified*/
+} 
+
+input{ 
+	 background: bisque ; 
+	 border: 2px solid blue; /* bordure avec 2px solide bleue*/ 
+	 border-radius: 10px; /* bordures arrondies*/ 
+} 
+
+input:hover{
+	background: aquamarine; 
+} 
+
+input:focus{ 
+	 background: aliceblue; 
+	 color: black; 
+} 
+
+.classe:hover{ 
+	 color: red; 
+	 border-color: green; 
+	 background: blue; 
+}

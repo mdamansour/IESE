@@ -1,0 +1,19 @@
+L_list = [25, 100, 200, 2000];
+
+for L = L_list
+    yL = yn(1:L); 
+    
+    [Rb, k_L] = xcorr(yL, 'biased');
+    [Runb, ~] = xcorr(yL, 'unbiased');
+    
+    figure;
+    subplot(2,1,1);
+    stem(k_L, Rb, '.');
+    title(['Autocorrélation Biaisée (L = ', num2str(L), ')']);
+    grid on;
+    
+    subplot(2,1,2);
+    stem(k_L, Runb, '.');
+    title(['Autocorrélation Non Biaisée (L = ', num2str(L), ')']);
+    grid on;
+end

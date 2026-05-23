@@ -1,0 +1,35 @@
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity shift_register_4bit is
+    port (
+        clk   : in  std_logic;
+        rst   : in  std_logic;
+        load  : in  std_logic;
+        din   : in  std_logic;
+        pdata : in  std_logic_vector(3 downto 0);
+        q     : out std_logic_vector(3 downto 0)
+    );
+end shift_register_4bit;
+
+architecture rtl of shift_register_4bit is
+    signal reg : std_logic_vector(3 downto 0);
+begin
+
+    process(clk, rst)
+    begin
+        if rst = '1' then
+            reg <= (others => '0');
+        elsif rising_edge(clk) then
+            if load = '1' then
+                reg <= pdata;                 -- Parallel load
+            else
+                reg <= din & reg(3 downto 1); -- Shift right
+            end if;
+        end if;
+    end process;
+
+    q <= reg;
+
+end rtl; 

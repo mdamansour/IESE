@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script src="calcule.js"></script>
+    </head>
+
+    <body> 
+        <form onsubmit="return false">
+
+            <input type="number" id="n1">
+            <input type="number" id="n2">
+
+            <select id="operation">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">x</option>
+                <option value="/">/</option>
+            </select>
+
+            <button value="Calculer" onclick="Calculer()">Calculer</button>
+
+            <br>
+
+            Resultat : <p id="resultat"></p>   
+
+        </form>
+
+    </body>
+
+</html>

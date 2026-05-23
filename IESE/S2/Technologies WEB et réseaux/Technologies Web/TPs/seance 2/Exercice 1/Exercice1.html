@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <script>
+            var T = [];
+            var nom;
+
+            do {
+                nom = prompt("Saisir un nom :");
+                if (nom !== "") {
+                    T.push(nom);
+                }
+            } while (nom !== "");
+
+            var ch = T.join("-");
+            alert(ch);
+        </script>
+    </body>
+</html>
