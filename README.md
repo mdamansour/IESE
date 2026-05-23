@@ -27,7 +27,7 @@ I created this because I have been in your shoes. I know the pace can be intense
 
 ## How to use this repository
 
-- Browse by semester: `S1/` and `S2/`
+- Browse by year and semester under `Ressources/`
 - Open the folders for your module to find Cours, TDs, TPs, and archives
 - Use the search in your editor to locate specific topics or file names
 - Feel free to adapt the materials to your learning style
